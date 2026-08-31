@@ -6,6 +6,7 @@ File Name:   FREE180nm.model_*
 Purpose:     Create to Study Analogic Circuit Design on LTspice
 Target Device: PTM 180nm Bulk / GFM_MCU IO Buffer
 Author:      max1186 
+
 Email:       mr.max1186@gmail.com
 Date:        2026-04-30
 Version:     1.0
