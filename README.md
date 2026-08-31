@@ -9,6 +9,8 @@ Author:      max1186
 
 Email:       mr.max1186@gmail.com
 
+Facebook channel "Diễn Đàn Học Vi Mạch Cơ Bản": https://www.facebook.com/profile.php?id=61568327632465
+
 Date:        2026-04-30
 
 Version:     1.0
