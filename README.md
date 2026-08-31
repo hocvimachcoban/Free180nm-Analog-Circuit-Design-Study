@@ -59,3 +59,10 @@ This project is distributed free of charge.
 •	Any redistribution or modification should respect the licenses and terms associated with the original source materials.
 
 Important: "Free" in this document refers to the availability of this library for free use and distribution under applicable source licenses. It does not override or replace the licenses of the original GF180MCU PDK, PTM models, or other third-party materials.
+
+# DONATE:
+ETH address: 0x5C91cA7CF8e1936837eb40DE57947d36C86355AC
+
+Solona address: 5eMdzhnXcDCoqUr9kS1N87eFekzzHYZBhfsLo4yP328T
+
+BTC address: bc1qk59q3r8v9cejrr6uyvvucapegs9uc4gs3fvkhl
