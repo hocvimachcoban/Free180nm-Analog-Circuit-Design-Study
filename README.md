@@ -15,6 +15,8 @@ Date:        2026-04-30
 
 Version:     1.0
 
+LTspice: version 24.0.12
+
 Notes:       Integrated with encrypted PTM 180nm and GFM_MCU libraries.
              Developed for accurate transient, DC analysis, AC simulation
              
