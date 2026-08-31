@@ -1,0 +1,527 @@
+.subckt an21 A B VDD VSS Y
+XM5 Y net26 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM4 N001 A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM3 net26 B N001 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM2 Y net26 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM1 net26 B VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM0 net26 A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+.ends an21
+
+.subckt an31 A B C VDD VSS Y
+XM7 Y net19 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM6 net19 C VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM5 net19 B VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM4 net19 A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM3 Y net19 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM2 net19 C N001 VSS ptm180_nmos1p8 wp=4.7 lp=0.18 np=1 mp=1
+XM1 N001 B N002 VSS ptm180_nmos1p8 wp=4.7 lp=0.18 np=1 mp=1
+XM0 N002 A VSS VSS ptm180_nmos1p8 wp=4.7 lp=0.18 np=1 mp=1
+.ends an31
+
+.subckt an41 A B C D VDD VSS Y
+XM8 Y net44 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM7 N003 A VSS VSS ptm180_nmos1p8 wp=6.2 lp=0.18 np=1 mp=1
+XM6 N002 B N003 VSS ptm180_nmos1p8 wp=6.2 lp=0.18 np=1 mp=1
+XM5 N001 C N002 VSS ptm180_nmos1p8 wp=6.2 lp=0.18 np=1 mp=1
+XM4 net44 D N001 VSS ptm180_nmos1p8 wp=6.2 lp=0.18 np=1 mp=1
+XM9 Y net44 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM3 net44 D VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM2 net44 C VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM1 net44 B VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM0 net44 A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+.ends an41
+
+.subckt buf1 A VDD VSS Y
+XM3 Y net13 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM2 net13 A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM1 net13 A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM0 Y net13 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+.ends buf1
+
+.subckt buf2 A VDD VSS Y
+XM4 Y net13 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM3 Y net13 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM2 net13 A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM5 Y net13 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM1 net13 A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM0 Y net13 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+.ends buf2
+
+.subckt buf4 A VDD VSS Y
+XM8 Y net13 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM6 Y net13 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM4 Y net13 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM3 Y net13 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM2 net13 A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM9 Y net13 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM7 Y net13 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM5 Y net13 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM1 net13 A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM0 Y net13 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+.ends buf4
+
+.subckt buf8 A VDD VSS Y
+XM17 Y net13 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM15 Y net13 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM12 Y net13 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM10 Y net13 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM8 Y net13 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM6 Y net13 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM4 Y net13 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM3 Y net13 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM2 net13 A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM16 Y net13 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM14 Y net13 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM13 Y net13 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM11 Y net13 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM9 Y net13 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM7 Y net13 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM5 Y net13 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM1 net13 A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM0 Y net13 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+.ends buf8
+
+.subckt cinv A OE VDD VSS YB
+XM5 net6 OE VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM4 N002 A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM3 YB OE N002 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM2 net6 OE VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM1 YB net6 N001 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM0 N001 A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+.ends cinv
+
+.subckt clkbuf2 A VDD VSS Y
+XM4 Y net13 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM3 Y net13 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM2 net13 A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM5 Y net13 VSS VSS ptm180_nmos1p8 wp=2.4 lp=0.18 np=1 mp=1
+XM1 net13 A VSS VSS ptm180_nmos1p8 wp=2.4 lp=0.18 np=1 mp=1
+XM0 Y net13 VSS VSS ptm180_nmos1p8 wp=2.4 lp=0.18 np=1 mp=1
+.ends clkbuf2
+
+.subckt clkinv1 A VDD VSS YB
+XM3 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM0 YB A VSS VSS ptm180_nmos1p8 wp=2.4 lp=0.18 np=1 mp=1
+.ends clkinv1
+
+.subckt clkinv2 A VDD VSS YB
+XM4 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM3 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM5 YB A VSS VSS ptm180_nmos1p8 wp=2.4 lp=0.18 np=1 mp=1
+XM0 YB A VSS VSS ptm180_nmos1p8 wp=2.4 lp=0.18 np=1 mp=1
+.ends clkinv2
+
+.subckt dff1 CK D Q VDD VSS
+XM26 Q net66 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM24 net66 net92 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM18 net78 net116 N003 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM17 net78 net74 N004 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM16 N003 net104 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM15 N004 net92 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM14 net92 net78 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM13 net104 net114 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM12 N002 net104 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM11 N001 D VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM10 net114 net116 N002 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM9 net114 net74 N001 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM8 net116 net74 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM7 net74 CK VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM27 Q net66 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM25 net66 net92 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM23 net78 net74 N007 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM22 N007 net104 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM21 net78 net116 N008 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM20 N008 net92 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM19 net92 net78 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM6 net116 net74 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM5 net74 CK VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM4 net104 net114 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM3 N006 net104 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM2 net114 net74 N006 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM1 N005 D VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM0 net114 net116 N005 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+.ends dff1
+
+.subckt exnr A B VDD VSS YB
+XM9 net18 B VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM8 net18 A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM7 YB net42 net18 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM6 N002 B VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM5 net42 A N002 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM4 YB net42 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM3 YB B N001 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM2 N001 A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM1 net42 B VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM0 net42 A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+.ends exnr
+
+.subckt exor A B VDD VSS Y
+XM9 net106 A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM8 net106 B VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM7 Y net134 net106 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM6 N001 A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM5 net134 B N001 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM4 Y net134 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM3 N002 B VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM2 Y A N002 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM1 net134 B VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM0 net134 A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+.ends exor
+
+.subckt inv1 A VDD VSS YB
+XM3 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM0 YB A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+.ends inv1
+
+.subckt inv2 A VDD VSS YB
+XM4 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM3 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM5 YB A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM0 YB A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+.ends inv2
+
+.subckt inv4 A VDD VSS YB
+XM8 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM6 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM4 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM3 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM9 YB A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM7 YB A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM5 YB A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM0 YB A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+.ends inv4
+
+.subckt inv8 A VDD VSS YB
+XM17 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM15 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM12 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM10 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM8 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM6 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM4 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM3 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM16 YB A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM14 YB A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM13 YB A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM11 YB A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM9 YB A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM7 YB A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM5 YB A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM0 YB A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+.ends inv8
+
+.subckt na212 A0 A1 B0 VDD VSS YB
+XM5 net031 A1 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM4 net031 A0 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM3 YB B0 net031 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM2 YB B0 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM1 YB A1 N001 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM0 N001 A0 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+.ends na212
+
+.subckt na21 A B VDD VSS YB
+XM4 N001 A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM3 YB B N001 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM1 YB B VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM0 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+.ends na21
+
+.subckt na222 A0 A1 B0 B1 VDD VSS YB
+XM7 net12 A1 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM6 net12 A0 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM5 YB B1 net12 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM4 YB B0 net12 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM3 YB A1 N002 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM2 N002 A0 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM1 YB B1 N001 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM0 N001 B0 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+.ends na222
+
+.subckt na31 A B C VDD VSS YB
+XM6 YB C VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM5 YB B VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM4 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM2 YB C N001 VSS ptm180_nmos1p8 wp=4.7 lp=0.18 np=1 mp=1
+XM1 N001 B N002 VSS ptm180_nmos1p8 wp=4.7 lp=0.18 np=1 mp=1
+XM0 N002 A VSS VSS ptm180_nmos1p8 wp=4.7 lp=0.18 np=1 mp=1
+.ends na31
+
+.subckt na41 A B C D VDD VSS YB
+XM7 N003 A VSS VSS ptm180_nmos1p8 wp=6.2 lp=0.18 np=1 mp=1
+XM6 N002 B N003 VSS ptm180_nmos1p8 wp=6.2 lp=0.18 np=1 mp=1
+XM5 N001 C N002 VSS ptm180_nmos1p8 wp=6.2 lp=0.18 np=1 mp=1
+XM4 YB D N001 VSS ptm180_nmos1p8 wp=6.2 lp=0.18 np=1 mp=1
+XM3 YB D VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM2 YB C VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM1 YB B VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM0 YB A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+.ends na41
+
+.subckt nr212 A0 A1 B0 VDD VSS YB
+XM5 net18 A1 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM4 net18 A0 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM3 YB B0 net18 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM2 YB B0 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM1 N001 A0 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM0 YB A1 N001 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+.ends nr212
+
+.subckt nr21 A B VDD VSS YB
+XM3 N001 A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM2 YB B N001 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM1 YB B VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM0 YB A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+.ends nr21
+
+.subckt nr222 A0 A1 B0 B1 VDD VSS YB
+XM7 N001 A0 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM6 N002 B0 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM5 YB B1 N002 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM4 YB A1 N001 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM3 YB B1 net31 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM2 YB B0 net31 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM1 net31 A1 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM0 net31 A0 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+.ends nr222
+
+.subckt nr31 A B C VDD VSS YB
+XM5 YB C VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM4 YB B VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM3 YB A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM2 YB C N002 VDD ptm180_pmos1p8 wp=12.6 lp=0.18 np=1 mp=1
+XM1 N002 B N001 VDD ptm180_pmos1p8 wp=12.6 lp=0.18 np=1 mp=1
+XM0 N001 A VDD VDD ptm180_pmos1p8 wp=12.6 lp=0.18 np=1 mp=1
+.ends nr31
+
+.subckt or21 A B VDD VSS Y
+XM4 Y net068 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM3 N001 A VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM2 net068 B N001 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM5 Y net068 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM1 net068 B VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM0 net068 A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+.ends or21
+
+.subckt or31 A B C VDD VSS Y
+XM7 Y net075 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM5 net075 C VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM4 net075 B VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM3 net075 A VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM6 Y net075 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM2 net075 C N002 VDD ptm180_pmos1p8 wp=12.6 lp=0.18 np=1 mp=1
+XM1 N002 B N001 VDD ptm180_pmos1p8 wp=12.6 lp=0.18 np=1 mp=1
+XM0 N001 A VDD VDD ptm180_pmos1p8 wp=12.6 lp=0.18 np=1 mp=1
+.ends or31
+
+.subckt rff1 CK D Q R VDD VSS
+XM29 net104 R N003 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM31 net92 R N006 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM26 Q net66 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM24 net66 net92 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM18 net78 net116 N004 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM17 net78 net74 N005 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM16 N004 net104 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM15 N005 net92 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM14 N006 net78 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM13 N003 net114 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM12 N002 net104 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM11 N001 D VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM10 net114 net116 N002 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM9 net114 net74 N001 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM8 net116 net74 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM7 net74 CK VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM27 Q net66 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM25 net66 net92 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM23 net78 net74 N009 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM22 N009 net104 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM21 net78 net116 N010 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM20 N010 net92 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM19 net92 net78 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM30 net92 R VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM28 net104 R VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM6 net116 net74 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM5 net74 CK VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM4 net104 net114 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM3 N008 net104 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM2 net114 net74 N008 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM1 N007 D VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM0 net114 net116 N007 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+.ends rff1
+
+.subckt sdff1 CK D Q SE SI VDD VSS
+XM39 net0275 net0287 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM28 net0367 SE VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM32 net0287 D VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM33 net0287 net0367 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM34 net0283 SI VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM35 net0283 SE VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM38 net0275 net0283 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM26 Q net66 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM24 net66 net92 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM18 net78 net116 N003 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM17 net78 net74 N004 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM16 N003 net104 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM15 N004 net92 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM14 net92 net78 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM13 net104 net114 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM12 N002 net104 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM11 N001 net0275 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM10 net114 net116 N002 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM9 net114 net74 N001 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM8 net116 net74 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM7 net74 CK VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM41 N010 net0283 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM40 net0275 net0287 N010 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM29 net0367 SE VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM30 N011 net0367 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM31 net0287 D N011 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM36 net0283 SE N005 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM37 N005 SI VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM27 Q net66 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM25 net66 net92 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM23 net78 net74 N008 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM22 N008 net104 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM21 net78 net116 N009 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM20 N009 net92 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM19 net92 net78 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM6 net116 net74 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM5 net74 CK VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM4 net104 net114 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM3 N007 net104 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM2 net114 net74 N007 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM1 N006 net0275 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM0 net114 net116 N006 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+.ends sdff1
+
+.subckt sff1 CK D Q S VDD VSS
+XM28 net104 S VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM31 net92 S VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM26 Q net66 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM24 net66 net92 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM18 net78 net116 N003 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM17 net78 net74 N004 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM16 N003 net104 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM15 N004 net92 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM14 net92 net78 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM13 net104 net114 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM12 N002 net104 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM11 N001 D VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM10 net114 net116 N002 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM9 net114 net74 N001 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM8 net116 net74 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM7 net74 CK VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM27 Q net66 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM25 net66 net92 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM30 N010 net78 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM23 net78 net74 N008 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM22 N008 net104 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM21 net78 net116 N009 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM20 N009 net92 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM19 net92 S N010 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM29 N007 net114 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM6 net116 net74 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM5 net74 CK VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM4 net104 S N007 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM3 N006 net104 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM2 net114 net74 N006 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM1 N005 D VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM0 net114 net116 N005 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+.ends sff1
+
+.subckt srff1 CK D Q R SE SI VDD VSS
+XM38 net0184 net0176 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM35 net0176 SE VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM34 net0176 SI VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM33 net0172 net0268 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM36 net0172 D VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM29 net104 R N003 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM31 net92 R N006 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM26 Q net66 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM24 net66 net92 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM18 net78 net116 N004 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM17 net78 net74 N005 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM16 N004 net104 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM15 N005 net92 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM14 N006 net78 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM13 N003 net114 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM12 N002 net104 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM11 N001 net0184 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM10 net114 net116 N002 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM9 net114 net74 N001 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM8 net116 net74 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM7 net74 CK VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM39 net0184 net0172 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM32 net0268 SE VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM37 net0172 D N013 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM40 N013 net0268 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM41 N007 SI VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM42 net0176 SE N007 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM43 net0268 SE VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM44 N008 net0176 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM45 net0184 net0172 N008 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM27 Q net66 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM25 net66 net92 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM23 net78 net74 N011 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM22 N011 net104 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM21 net78 net116 N012 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM20 N012 net92 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM19 net92 net78 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM30 net92 R VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM28 net104 R VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM6 net116 net74 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM5 net74 CK VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM4 net104 net114 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM3 N010 net104 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM2 net114 net74 N010 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM1 N009 net0184 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM0 net114 net116 N009 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+.ends srff1
+
+.subckt ssff1 CK D Q S SE SI VDD VSS
+XM33 net0178 D VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM34 net0178 net0274 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM35 net0174 SI VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM36 net0174 SE VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM38 net0166 net0174 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM28 net104 S VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM31 net92 S VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM26 Q net66 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM24 net66 net92 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM18 net78 net116 N003 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM17 net78 net74 N004 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM16 N003 net104 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM15 N004 net92 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM14 net92 net78 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM13 net104 net114 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM12 N002 net104 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM11 N001 net0166 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM10 net114 net116 N002 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM9 net114 net74 N001 VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM8 net116 net74 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM7 net74 CK VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM32 net0274 SE VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM39 net0166 net0178 VDD VDD ptm180_pmos1p8 wp=6 lp=0.18 np=1 mp=1
+XM41 N006 net0174 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM40 net0166 net0178 N006 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM37 net0274 SE VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM42 N013 net0274 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM43 net0178 D N013 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM44 net0174 SE N005 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM45 N005 SI VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM27 Q net66 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM25 net66 net92 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM30 N012 net78 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM23 net78 net74 N010 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM22 N010 net104 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM21 net78 net116 N011 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM20 N011 net92 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM19 net92 S N012 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM29 N009 net114 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM6 net116 net74 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM5 net74 CK VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM4 net104 S N009 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM3 N008 net104 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM2 net114 net74 N008 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM1 N007 net0166 VSS VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+XM0 net114 net116 N007 VSS ptm180_nmos1p8 wp=2 lp=0.18 np=1 mp=1
+.ends ssff1

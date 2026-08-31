@@ -1,0 +1,29 @@
+Version 4
+SymbolType BLOCK
+LINE Normal 64 -32 64 -48
+LINE Normal 32 -16 64 -32
+LINE Normal 64 32 64 48
+LINE Normal 32 16 64 32
+LINE Normal 40 -25 32 -16
+LINE Normal 43 -17 32 -16
+LINE Normal 32 22 32 -22
+LINE Normal 32 0 0 0
+WINDOW 3 80 -16 Left 2
+WINDOW 0 80 -48 Left 2
+WINDOW 1 80 -32 Left 2
+WINDOW 123 80 16 Left 2
+WINDOW 39 80 32 Left 2
+WINDOW 40 80 48 Left 2
+SYMATTR Value mp=1
+SYMATTR Prefix x
+SYMATTR ModelFile models_gfmcu.lib
+SYMATTR SpiceModel gfmcu_vpnp_5x5
+PIN 64 48 NONE 8
+PINATTR PinName c
+PINATTR SpiceOrder 1
+PIN 0 0 NONE 8
+PINATTR PinName b
+PINATTR SpiceOrder 2
+PIN 64 -48 NONE 8
+PINATTR PinName e
+PINATTR SpiceOrder 3
