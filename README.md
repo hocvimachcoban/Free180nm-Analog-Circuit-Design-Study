@@ -4,8 +4,11 @@
 Purpose: Support Analog and Mixed-Signal circuit design and simulation in LTspice for educational and research purposes. 
 
 File Name:   FREE180nm.model_*
+
 Purpose:     Create to Study Analogic Circuit Design on LTspice
+
 Target Device: PTM 180nm Bulk / GFM_MCU IO Buffer
+
 Author:      max1186 
 
 Email:       mr.max1186@gmail.com
