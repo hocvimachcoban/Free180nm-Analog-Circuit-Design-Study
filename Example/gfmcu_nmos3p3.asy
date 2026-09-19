@@ -13,8 +13,8 @@ WINDOW 1 80 -32 Left 2
 WINDOW 123 80 16 Left 2
 WINDOW 39 80 32 Left 2
 WINDOW 40 80 48 Left 2
-SYMATTR Value wp=1.50
-SYMATTR Value2 lp=0.28
+SYMATTR Value wp=1.50e-6
+SYMATTR Value2 lp=0.28e-6
 SYMATTR SpiceLine np=1
 SYMATTR SpiceLine2 mp=1
 SYMATTR Prefix x

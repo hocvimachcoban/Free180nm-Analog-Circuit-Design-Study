@@ -1,14 +1,8 @@
+
 * ==============================================================================
-* File Name:   FREE180nm.model_FF
-* Purpose:     Create to Study Analogic Circuit Design on LTspice
-* Target Device: PTM 180nm Bulk / GFM_MCU IO Buffe
-* Author:      max1186
-* Date:        2026-04-30
-* Version:     1.0
-* ------------------------------------------------------------------------------
-* Notes:       
-*   - Integrated with encrypted PTM 180nm and GFM_MCU libraries.
-*   - Developed for accurate transient, DC analysis, AC simulation
+* FILE: FREE180nm.model_FF
+* NOTE: All geometrical dimensions and parameters in this library 
+*       use Standard SI Meter (m) units.
 * ==============================================================================
 .include 'PTM180nm_bulk_FF.txt'
 .include 'models_gfmcu.lib'

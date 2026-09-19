@@ -1,0 +1,53 @@
+LTspice 24.0.12 for Windows
+Circuit: * E:\00_Semi_Course\Upload_git_Face\Free180nm_LTspice_AnalogCircuitDesign_1.1\Example\03_Dev_idvds.asc
+Start Time: Sat Sep 19 07:15:45 2026
+solver = Normal
+Maximum thread count: 16
+
+
+
+WARNING: Less than two connections to node vdd18.  This node is used by vvdd18.
+Warning: LTspice uses BSIM4 version 4.6.1. Your model specified an unrecognized version number: 4.50000000e+00
+.step pvgn33=0.5
+
+
+
+.step pvgn33=1
+
+
+
+.step pvgn33=1.5
+
+
+
+.step pvgn33=2
+
+
+
+.step pvgn33=2.5
+tnom = 27
+temp = 27
+method = modified trap
+.step pvgn33=3
+
+
+Measurement: _dien_dan_hoc_vi_mach_co_ban_
+  step	0
+     1	0
+     2	0
+     3	0
+     4	0
+     5	0
+     6	0
+
+Measurement: _facebook_page_id_61568327632465_
+  step	0
+     1	0
+     2	0
+     3	0
+     4	0
+     5	0
+     6	0
+
+Total elapsed time: 0.324 seconds.
+
