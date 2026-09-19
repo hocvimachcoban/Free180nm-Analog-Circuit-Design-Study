@@ -119,7 +119,7 @@ inv1, inv1\_33, inv2, na21, nr21, etc.
 
 \*\*I\_D-V\_DS Output Characteristics:
 Example\\03\_Dev\_idvds.asc
-<img width="2078" height="1221" alt="image" src="https://github.com/user-attachments/assets/70081290-978c-40ab-a68c-1aa4bd3b4c3f" />
+<img width="537" height="588" alt="image" src="https://github.com/user-attachments/assets/e760b1a5-1090-41ea-94ca-436b36f826be" />
 
 Spice netlist from LTSpice:
 
